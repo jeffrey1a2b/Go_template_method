@@ -1,1 +1,2 @@
-# Go_template_method
+# Golang template method
+Just a toy example of template method.
