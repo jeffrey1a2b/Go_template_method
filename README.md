@@ -1,0 +1,1 @@
+# Go_template_method
