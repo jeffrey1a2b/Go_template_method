@@ -1,0 +1,27 @@
+...> go test -v
+=== RUN   TestTextDocument_PrepareData
+    hw3_test.go:15: TestTextDocument_PrepareData passed: expected 'This is the raw text data.', got 'This is the raw text data.'
+--- PASS: TestTextDocument_PrepareData (0.00s)
+=== RUN   TestTextDocument_FormatContent
+    hw3_test.go:28: TestTextDocument_FormatContent passed: expected 'Formatted Text: test data', got 'Formatted Text: test data'
+--- PASS: TestTextDocument_FormatContent (0.00s)
+=== RUN   TestTextDocument_Save
+    hw3_test.go:41: TestTextDocument_Save passed: expected 'Saving text document: Formatted Text: test data', got 'Saving text document: Formatted Text: test data'
+--- PASS: TestTextDocument_Save (0.00s)
+=== RUN   TestHTMLDocument_PrepareData
+    hw3_test.go:53: TestHTMLDocument_PrepareData passed: expected '<html><body>This is raw HTML data.</body></html>', got '<html><body>This is raw HTML data.</body></html>'
+--- PASS: TestHTMLDocument_PrepareData (0.00s)
+=== RUN   TestHTMLDocument_FormatContent
+    hw3_test.go:66: TestHTMLDocument_FormatContent passed: expected '<div>html test data</div>', got '<div>html test data</div>'
+--- PASS: TestHTMLDocument_FormatContent (0.00s)
+=== RUN   TestHTMLDocument_Save
+    hw3_test.go:79: TestHTMLDocument_Save passed: expected 'Saving HTML document: <div>formatted html</div>', got 'Saving HTML document: <div>formatted html</div>'
+--- PASS: TestHTMLDocument_Save (0.00s)
+=== RUN   TestBaseGenerator_Generate_TextDocument
+    hw3_test.go:92: TestBaseGenerator_Generate_TextDocument passed: expected 'Saving text document: Formatted Text: This is the raw text data.', got 'Saving text document: Formatted Text: This is the raw text data.'
+--- PASS: TestBaseGenerator_Generate_TextDocument (0.00s)
+=== RUN   TestBaseGenerator_Generate_HTMLDocument
+    hw3_test.go:105: TestBaseGenerator_Generate_HTMLDocument passed: expected 'Saving HTML document: <div><html><body>This is raw HTML data.</body></html></div>', got 'Saving HTML document: <div><html><body>This is raw HTML data.</body></html></div>'
+--- PASS: TestBaseGenerator_Generate_HTMLDocument (0.00s)
+PASS
+ok      hw3     0.190s
